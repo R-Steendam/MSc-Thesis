@@ -1,0 +1,23 @@
+#!/bin/csh
+#SBATCH --job-name 1D_pm2_Analysis
+#SBATCH --nodes=1
+#SBATCH --ntasks=8
+#SBATCH --time=2-16:30:00
+
+
+setenv OMP_NUM_THREADS 8
+setenv MKL_NUM_THREADS 1
+
+setenv WD $SLURM_SUBMIT_DIR
+
+#echo $TMPDIR
+#cd $TMPDIR
+
+#cp $WD/run $TMPDIR
+#cp $WD/inp* $TMPDIR
+
+time ~/NISE_2017/bin/NISE input1D
+
+#cp *.log $WD
+#cp *.dat $WD
+

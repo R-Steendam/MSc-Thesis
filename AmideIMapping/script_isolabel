@@ -1,0 +1,24 @@
+#!/bin/csh
+#SBATCH --job-name "ala25" 
+#SBATCH --nodes=1
+#SBATCH --ntasks=8
+#SBATCH --time=0-05:20:00
+#SBATCH --partition=regular
+
+setenv OMP_NUM_THREADS 8
+setenv MKL_NUM_THREADS 1
+
+setenv WD $SLURM_SUBMIT_DIR
+
+#echo $TMPDIR
+#cd $TMPDIR
+
+#cp $WD/run $TMPDIR
+#cp $WD/inp* $TMPDIR
+
+~/NISE_2017/bin/translate inpTra5
+
+#cp *.log $WD
+#cp *.dat $WD
+
+

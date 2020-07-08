@@ -1,0 +1,20 @@
+#!/bin/csh
+#SBATCH --job-name "2D_S6y1a"
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --time=7-16:30:00
+
+setenv OMP_NUM_THREADS 8
+setenv MKL_NUM_THREADS 1
+echo $MKL_NUM_THREADS
+
+setenv WD $SLURM_SUBMIT_DIR
+
+#echo $TMPDIR
+#cd $TMPDIR
+
+time ~/NISE_2017/bin/NISE input2D
+~/NISE_2017/bin/2DFFT input2D
+
+#cp *.log $WD
+#cp *.dat $WD
