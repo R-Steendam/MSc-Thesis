@@ -7,7 +7,7 @@ The InpTra files, located in the AmideMapping directory, are used to translate t
 
 The exciton analysis script, used on the 2PNE protein, was based on previous work by T.L.C. Jansen [3] with the help of the MD analysis Software package [4]
 
-The 6Y1A isolabel graphing script runs over a set of directories that contain the data from NISE for the isotopically labeled samples. An average Hamiltonian created with InpTra is necessary, as wel as the "TD_Absorption" and "Absorption.dat" files which correspond to a couplingcut set to zero (Fully labeled), and "TD_Absorption_2" and "Absorption_2.dat" files which are the result of the couplingcut set to 100 (Diluted sample).
+The 6Y1A isolabel graphing script runs over a set of directories that contain the data from NISE for the isotopically labeled samples. An average Hamiltonian created with the anaylisis function of NISE is necessary, as wel as the "TD_Absorption" and "Absorption.dat" files which correspond to a couplingcut set to zero (Fully labeled), and "TD_Absorption_2" and "Absorption_2.dat" files which are the result of the couplingcut set to 100 (Diluted sample).
 
 
 
