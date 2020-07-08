@@ -1,5 +1,5 @@
 All the input files and scripts used to create the data and analyze them for my thesis titled:
-"Examining the Internal Structure of Protein Aggregates using Two-Dimeansional Infrared Spectroscopy"
+"Examining the Internal Structure of Protein Aggregates using Two-Dimensional Infrared Spectroscopy"
 
 
 All MD analysis scripts have been adapted from the scripts used with the "Lyzosime in water" GROMACS tutorial [1]
